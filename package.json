@@ -1,0 +1,14 @@
+{
+  "name": "cruise-ship",
+  "version": "1.0.0",
+  "description": "Making a cruise ship to sail to different ports",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ernie Metcalf",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
