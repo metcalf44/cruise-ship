@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <title>Cruise ship</title>
 </head>
 
 <body>
-    <div class="container">
+    <div id="container">
         <div class='sky'>
             <div class='sun'></div>
         </div>
@@ -20,7 +21,7 @@
             <div id='ports'></div>
             <div id="ship"></div>
         </div>
-        <button id="sailbutton">Set Sail!</button>
+        <button id="sailButton">Set Sail!</button>
     </div>
 
     <script src='src/ship.js'></script>
@@ -30,15 +31,18 @@
     <script>
         
         const itinerary = new Itinerary([
-            new Port ('Southampton UK'),
-            new Port ('Basseterre Saint-Kitts'),
-            new Port ('Castries Saint-Lucia'),
-            new Port ('Bridgetown Barbados')
+            new Port ('Southampton, UK'),
+            new Port ('Basseterre, Saint-Kitts'),
+            new Port ('Castries, Saint-Lucia'),
+            new Port ('Bridgetown, Barbados'),
+            
         ]);
+
         const ship = new Ship(itinerary);
         const controller = new Controller(ship);
+
         controller.renderPorts(itinerary.ports);
-        controller.renderShip(ship);
+        controller.renderShip();
     </script>
 </body>
 

@@ -8,6 +8,7 @@
       this.previousPort = null;
       this.currentPort.addShip(this);
       this.currentPort.removeShip(this);
+      this.nextPort = itinerary.ports[1];
       
     }
     setSail() {

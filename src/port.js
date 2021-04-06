@@ -2,9 +2,10 @@
 (function exportPort() {
 
     class Port {
-        constructor(port) {
-            this.name = 'Southampton UK' 
+        constructor(portName) {
+            this.name = portName
             this.ships = []
+            
         }
         
         addShip(ship) {
